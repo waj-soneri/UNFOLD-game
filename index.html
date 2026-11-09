@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNFOLD-The Universe Inside You</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <main> 
+    <section id="mainMenu" class="screen">
+        <p class="eyebrow"> A MYSTERY EXPERIENCE</p>
+        <h1> UNFOLD</h1>
+        <p class="tagline"> THE UNIVERSE INSIDE YOU</p>
+        <p class="intro"> Every mystery has a beginning.</p>
+<button id="startButton">ENTER THE UNKNOWN</button>
+    </section>
+    <!---Game Room-->
+    <section id="gameScene" class="screen hidden">
+     <p class="eyebrow"> CHAPTER 01</p>
+     <h1 class="roomTitle"> THE UNKNOWN</h1>
+     <p class="story">
+        You wake up in a room that has no windows.
+        A locked door stands before you.
+        Three strange objects surround you.
+     </p>
+     <h2> Explore the Objects</h2>
+     <div class="cluecontainer">
+        <article class="clue">
+            <div class="object"></div>
+            <h3> The Watcher</h3>
+            <p> A mysterious silver eye.</p>
+            <button class="clueButton"
+            data-clue="eye">EXAMINE</button>
+            </article>
+          <article class="clue">
+                <div class="object"></div>
+                <h3> The Guide</h3>
+                <p> A mysterious star.</p>
+                <button class="clueButton"
+                data-clue="star">EXAMINE</button>
+            </article>
+     <article class="clue">
+        <div class="object"></div>
+        <h3> The Keeper</h3>
+        <p> A mysterious silent clock.</p>
+        <button class="clueButton"
+        data-clue="clock">
+    EXAMINE</button>
+     </article>
+     </div>
+     <div class="messageBox">
+        <h2> YOUR DISCOVERIES</h2>
+        <p id="cluemessage">
+            you haven't discovered any clues yet.
+        </p>
+        <p id="cluecount"> Clues discovered: 0/3</p>
+     </div>
+     <div class="doorBox">
+        <div class="doorSymbol"></div>
+        <h2> THE LOCKED DOOR</h2>
+        <p class="doorHint">
+            The watcher comes first.<br>
+            The keeper follows.<br>
+            The guiding light comes last.
+        </p>
+        <p> Find the three numbers and enter the secret code.</p>
+        <input 
+        type="text"
+        id="secretCode"
+        maxlength="3"
+        inputmode="numeric"
+        placeholder="???"
+        autocomplete="off"
+        >
+        <button id="unlockButton"> UNLOCK DOOR</button>
+        <p id="gameMessage" aria-live="polite"></p>
+        </div>
+        </section>
+        <!--Ending-->
+        <section id="ending" class="screen hidden">
+            <p class="eyebrow"> CHAPTER 01 COMPLETE</p>
+            <h1> THE DOOR IS OPEN</h1>
+            <p class="endingTest">
+                You thought you were escaping the room.
+                but the room was only the beginning.
+            </p>
+            <h2> THE UNIVERSE IS STILL UNFOLDING</h2>
+            <button id="restartButton">RETURN TO MENU</button>
+        </section>
+        </main>
+        <script src="script.js"></script>
+</body>
+</html>

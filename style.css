@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:radial-gradient(circle,#292044,#090B18 75%);
+    color:white;
+    font-family:Arial,sans-serif;
+    min-height:100hv;
+}
+/*Main container*/
+main{
+    width: 100%;
+    min-height:100vh;
+}
+.screen{
+    width:100%;
+    min-height:100vh;
+    padding:35px 20px;
+    disply:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+.eyebrow{
+    color:silver;
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+h1{
+    font-size:clamp(48px, 10vw, 85px);
+    letter-spacing:12px;
+    color:lavender;
+    text-shadow: 0 0 25px #9870D8;
+}
+.tagline{
+    margin-top: 15px;
+    color:lavender;
+    letter-spacing: 4px;
+    font-size: 15px;
+}
+.intro{
+    margin-top:35px;
+    color:silver;
+}
+p{
+    font-size: 17px;
+color:#C5BBD8;
+margin-top:15px;
+letter-spacing: 2px;
+}
+button{
+    margin-top:25px;
+    padding:14px 30px;
+    background:rebeccapurple;
+    color:white;
+    border:1px solid #C9A7FF;
+    border-radius: 7px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #A17BD5;
+    transform:scale(1.05);
+}
+.roomTitle{
+    font-size: clamp(35px, 7vw,55px);
+}
+.story{
+    max-width: 650px;
+    line-height: 1.8;
+    color: silver;
+    margin:20px auto 35px;
+}
+h2{
+    font-size: 21px;
+    color: lavender;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.clueContainer{
+    width:100%;
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:18px;
+}
+.clue{
+    background:rgba(255,255,2555,0.06);
+    border: 1px solid slategray;
+    border-radius: 12px;
+    padding: 25px 12px;
+    transition: 0,3s;
+}
+.clue:hover{
+    border-color: lavender;
+    transform:translateY(-5px);
+}
+.object{
+    color: lavender;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+.clue h3{
+    color:white;
+    margin-bottom: 10px;
+}
+.clue p{
+    color: silver;
+    font-size: 13px;
+    line-height: 1.6;
+}
+.clueButton{
+    font-size: 11px;
+    padding: 11px 18px;
+}
+.messageBox,
+.doorBox{
+    width: 100%;
+    max-width: 650px;
+    background: rbda(255,255,255,0.05);
+    border: 1px solid slategray;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 30px;
+}
+.messageBox p{
+    color: silver;
+    line-height: 1.7;
+}
+.clueCount{
+    margin-top: 12px;
+    color:lavender;
+}
+.doorSymbol {
+    color: lavender;
+    font-size: 55px;
+    margin-bottom: 12px;
+}
+.doorHint{
+    color: lavender;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+.doorBox >p{
+    color: silver;
+    line-height: 1.7;
+}
+input {
+    display: block;
+    width: 160px;
+    padding: 30px;
+    margin:20px auto 0;
+    background: #151329;
+    color: white;
+    border: 1px solid lavender;
+    border-radius:  7px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 8px;
+}
+.endingText{
+    max-width: 550px;
+    color: silver;
+    line-height: 2;
+    margin: 30px auto;
+}
+@media(max-width:600px){
+    .clueContainer{
+        grid-template-columns: 1fr;
+    }
+    h1{
+        letter-spacing: 7px;
+    }
+    .clue{
+        padding: 20px;
+    }
+    .screen{
+        padding: 30px 16px;
+    }
+}
